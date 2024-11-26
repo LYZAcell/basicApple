@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
+  // 변수를 가져와서 서버에서 가져온 척하기
+  let post = "강남 우동 맛집";
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <h1> 이가영의 브랜치연결</h1>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className = 'black-nav'>
+        <h4>이가영의 블로그</h4>
+      </div>
+      <h4>{post}</h4> {/*변수명을 꽂을땐 중괄호 _ 데이터바인딩*/}
+      <h4 style = {{color: 'red', fontSize:'16px'}}>스타일을 입혔습니다</h4>
     </div>
   );
 }
