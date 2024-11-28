@@ -1,5 +1,5 @@
 import './App.css';
-
+import DataFetchingComponent from "./async"
 
 function App() {
   // 변수를 가져와서 서버에서 가져온 척하기
@@ -13,6 +13,7 @@ function App() {
       </div>
       <h4>{post}</h4> {/*변수명을 꽂을땐 중괄호 _ 데이터바인딩*/}
       <h4 style = {{color: 'red', fontSize:'16px'}}>스타일을 입혔습니다</h4>
+      <DataFetchingComponent/>
     </div>
   );
 }
